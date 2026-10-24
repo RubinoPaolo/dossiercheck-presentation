@@ -1,0 +1,38 @@
+:root {
+  --bg: #FFFFFF;
+  --surface: #F7F9FD;
+  --line: #E1E6EF;
+  --ink: #0B2A5B;
+  --mist: #5E6B85;
+  --today: #1F5FD6;
+  --orange: #F47B20;
+  --font-display: 'Bricolage Grotesque Variable', 'IBM Plex Sans', sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+}
+
+.slidev-layout {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+.slidev-layout.full { padding: 0; }
+
+.stage {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(1100px 560px at 90% -20%, #EAF1FD 0%, transparent 60%),
+    radial-gradient(900px 480px at -10% 115%, #FFF1E5 0%, transparent 60%),
+    var(--bg);
+}
+
+.display {
+  font-family: var(--font-display);
+  font-variation-settings: 'wdth' 90;
+  letter-spacing: -0.02em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

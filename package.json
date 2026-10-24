@@ -1,0 +1,18 @@
+{
+  "name": "presentazione-tesi",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export",
+    "build:web": "node scripts/build-web.mjs"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.0.0",
+    "@slidev/theme-default": "latest",
+    "@fontsource-variable/bricolage-grotesque": "^5.0.0",
+    "@fontsource/ibm-plex-sans": "^5.0.0",
+    "vue": "^3.5.0"
+  }
+}
